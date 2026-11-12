@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Chat Bot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Top bar -->
+      <header class="top">
+        <div class="logo">🤖</div>
+        <div class="who">
+          <div class="name">AI Chat Bot <span class="badge">AI</span></div>
+          <div class="status">
+            <span class="dot"></span>
+            <span id="statusText">Online</span>
+            <span class="sep">·</span>
+            <span><span id="tokenCount">0</span> tokens</span>
+          </div>
+        </div>
+        <button id="newChatBtn" class="new-btn" title="Start a new chat">
+          🔄 New chat
+        </button>
+      </header>
+
+      <!-- Messages -->
+      <main id="chatBox" class="chat-box"></main>
+
+      <!-- Message box -->
+      <form id="chatForm" class="input-bar">
+        <input
+          id="userInput"
+          type="text"
+          placeholder="Ask the bot anything..."
+          autocomplete="off"
+        />
+        <button id="sendBtn" type="submit">Send ➤</button>
+      </form>
+
+      <div class="footer">
+        🤖 You are chatting with an AI. It can make mistakes.
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
